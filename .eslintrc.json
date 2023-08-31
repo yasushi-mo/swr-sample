@@ -1,3 +1,9 @@
 {
-  "extends": ["next/core-web-vitals", "jsx-a11y", "sonarjs", "prettier"]
+  "extends": [
+    "next/core-web-vitals",
+    "react-hooks/recommended",
+    "jsx-a11y",
+    "sonarjs",
+    "prettier"
+  ]
 }
