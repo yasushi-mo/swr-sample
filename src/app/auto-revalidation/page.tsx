@@ -1,12 +1,11 @@
 import Link from "next/link";
-import { FC } from "react";
 
 type Route = {
   label: string;
   path: string;
 };
 
-const ROUTES: Route[] = [
+export const ROUTES_AUTO_REVALIDATION: Route[] = [
   {
     label: "Revalidate on Focus",
     path: "/auto-revalidation/on-focus",
@@ -35,12 +34,15 @@ const ROUTES: Route[] = [
 
 export default function AutomaticRevalidation() {
   return (
-    <ul>
-      {ROUTES.map((route) => (
-        <li key={route.path}>
-          <Link href={route.path}>{route.label}</Link>
-        </li>
-      ))}
-    </ul>
+    <>
+      <h2 className={`mb-3 text-2xl font-semibold`}>Automatic Revalidation</h2>
+      <ul className={`list-style: disc`}>
+        {ROUTES_AUTO_REVALIDATION.map((route) => (
+          <li key={route.path}>
+            <Link href={route.path}>- {route.label}</Link>
+          </li>
+        ))}
+      </ul>
+    </>
   );
 }
