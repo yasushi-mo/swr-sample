@@ -3,21 +3,31 @@ import { RandomJoke } from "../types";
 type Props = {
   heading: string;
   description: string;
+  isValidating: boolean;
   randomJoke: RandomJoke | undefined;
 };
 
-export function FetchedRandomJoke({ heading, description, randomJoke }: Props) {
+export function FetchedRandomJoke({
+  heading,
+  description,
+  isValidating,
+  randomJoke,
+}: Props) {
   return (
-    <>
+    <div className={`p-3`}>
       <h2 className={`mb-3 text-2xl font-semibold`}>{heading}</h2>
-      <p>{description}</p>
-      <hr />
+      <p className={`mb-3 whitespace-pre-wrap`}>{description}</p>
+      <hr className={`mb-3`} />
       <p>Fetched Data from Random Joke API</p>
-      <ul>
-        <li>- Type: {randomJoke?.type}</li>
-        <li>- Setup: {randomJoke?.setup}</li>
-        <li>- Punchline: {randomJoke?.punchline}</li>
-      </ul>
-    </>
+      {isValidating ? (
+        <p>Validating...</p>
+      ) : (
+        <ul>
+          <li>- Type: {randomJoke?.type}</li>
+          <li>- Setup: {randomJoke?.setup}</li>
+          <li>- Punchline: {randomJoke?.punchline}</li>
+        </ul>
+      )}
+    </div>
   );
 }
