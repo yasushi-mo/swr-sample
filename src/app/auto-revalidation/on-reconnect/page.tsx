@@ -5,7 +5,7 @@ import { ROUTES_AUTO_REVALIDATION } from "../page";
 import { FetchedRandomJoke } from "../components/FetchedRandomJoke";
 
 export default function RevalidateOnReconnect() {
-  const heading = ROUTES_AUTO_REVALIDATION[2].label;
+  const heading = ROUTES_AUTO_REVALIDATION[3].label;
   const { data, isValidating } = useRandomJoke({ revalidateOnReconnect: true });
 
   return (

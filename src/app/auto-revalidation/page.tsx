@@ -1,11 +1,12 @@
 import Link from "next/link";
 
-type Route = {
-  label: string;
-  path: string;
-};
+type Route = Record<"label" | "path", string>;
 
 export const ROUTES_AUTO_REVALIDATION: Route[] = [
+  {
+    label: "Revalidate on Mount",
+    path: "/auto-revalidation/on-mount",
+  },
   {
     label: "Revalidate on Focus",
     path: "/auto-revalidation/on-focus",
@@ -17,10 +18,6 @@ export const ROUTES_AUTO_REVALIDATION: Route[] = [
   {
     label: "Revalidate on Reconnect",
     path: "/auto-revalidation/on-reconnect",
-  },
-  {
-    label: "Revalidate on Mount",
-    path: "/auto-revalidation/on-mount",
   },
   {
     label: "Disable Automatic Revalidations",

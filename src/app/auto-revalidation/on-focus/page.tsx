@@ -5,7 +5,7 @@ import { ROUTES_AUTO_REVALIDATION } from "../page";
 import { FetchedRandomJoke } from "../components/FetchedRandomJoke";
 
 export default function RevalidateOnFocus() {
-  const heading = ROUTES_AUTO_REVALIDATION[0].label;
+  const heading = ROUTES_AUTO_REVALIDATION[1].label;
   const { data, isValidating } = useRandomJoke({ revalidateOnFocus: true });
 
   return (
