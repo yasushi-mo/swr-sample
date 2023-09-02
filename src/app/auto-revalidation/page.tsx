@@ -20,6 +20,10 @@ export const ROUTES_AUTO_REVALIDATION: Route[] = [
     path: "/auto-revalidation/on-reconnect",
   },
   {
+    label: "Revalidate if Stale",
+    path: "/auto-revalidation/if-stale",
+  },
+  {
     label: "Disable Automatic Revalidations",
     path: "/auto-revalidation/disabled",
   },

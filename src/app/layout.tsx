@@ -24,7 +24,8 @@ export default function RootLayout({
           value={{
             revalidateOnFocus: false,
             revalidateOnReconnect: false,
-            revalidateOnMount: false,
+            // revalidateOnMount: false,
+            revalidateIfStale: false,
           }}
         >
           {children}

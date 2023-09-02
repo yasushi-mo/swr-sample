@@ -5,7 +5,7 @@ import { ROUTES_AUTO_REVALIDATION } from "../page";
 import { FetchedRandomJoke } from "../components/FetchedRandomJoke";
 
 export default function DisableAutomaticRevalidations() {
-  const heading = ROUTES_AUTO_REVALIDATION[4].label;
+  const heading = ROUTES_AUTO_REVALIDATION[5].label;
   const { data, isValidating } = useRandomJokeImmutable();
 
   return (
