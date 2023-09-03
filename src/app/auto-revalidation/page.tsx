@@ -8,8 +8,8 @@ export const ROUTES_AUTO_REVALIDATION: Route[] = [
     path: "/auto-revalidation/on-mount",
   },
   {
-    label: "Revalidate if Stale",
-    path: "/auto-revalidation/if-stale",
+    label: "Disable Revalidate if Stale",
+    path: "/auto-revalidation/disable-if-stale",
   },
   {
     label: "Revalidate on Focus",
