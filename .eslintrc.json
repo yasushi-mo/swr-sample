@@ -1,8 +1,8 @@
 {
   "extends": [
     "next/core-web-vitals",
-    "plugin:react/jsx-runtime",
     "react-hooks/recommended",
+    "plugin:react/jsx-runtime",
     "jsx-a11y",
     "sonarjs",
     "prettier"
