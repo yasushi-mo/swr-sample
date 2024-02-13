@@ -3,6 +3,7 @@
     "next/core-web-vitals",
     "react-hooks/recommended",
     "plugin:react/jsx-runtime",
+    "plugin:@tanstack/eslint-plugin-query/recommended",
     "jsx-a11y",
     "sonarjs",
     "prettier"
