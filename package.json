@@ -6,7 +6,8 @@
     "dev": "npx open-cli http://localhost:3000 && next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write src/**/*.{ts,tsx}"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.20.2",
