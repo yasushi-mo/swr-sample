@@ -1,6 +1,5 @@
 import Link from "next/link";
-
-type Route = Record<"label" | "path", string>;
+import { Route } from "@/app/type";
 
 export const ROUTES_AUTO_REVALIDATION: Route[] = [
   {
