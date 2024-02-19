@@ -1,6 +1,6 @@
 "use client";
 
-import { useRandomJoke } from "@/api";
+import { useRandomJoke } from "@/app/auto-revalidation/api";
 import { ROUTES_AUTO_REVALIDATION } from "../page";
 import { FetchedRandomJoke } from "../components/FetchedRandomJoke";
 

@@ -1,7 +1,6 @@
 "use client";
 
-import { fetcher } from "@/api";
-import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { useQuery } from "@tanstack/react-query";
 
 export default function CoreConcepts() {
   const { data } = useQuery({ queryKey: [] });
