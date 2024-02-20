@@ -17,15 +17,15 @@ export const ROUTE_TAN_STACK_QUERY: Route[] = [
 export default function TanStackQuery() {
   return (
     <>
-      TanStackQuery
+      {/* TanStackQuery */}
       <QueryClientProvider client={queryClient}>
-        <ul className={`list-style: disc`}>
+        {/* <ul className={`list-style: disc`}>
           {ROUTE_TAN_STACK_QUERY.map((route) => (
             <li key={route.path}>
               <Link href={route.path}>- {route.label}</Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
         <CoreConcepts />
       </QueryClientProvider>
     </>
