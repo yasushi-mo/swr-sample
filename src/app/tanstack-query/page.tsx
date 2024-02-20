@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const queryClient = new QueryClient();
 
-const ROUTE_TAN_STACK_QUERY: Route[] = [
+export const ROUTE_TAN_STACK_QUERY: Route[] = [
   {
     label: "Core Concepts",
     path: "/tanstack-query/core-concepts",
@@ -26,6 +26,7 @@ export default function TanStackQuery() {
             </li>
           ))}
         </ul>
+        <CoreConcepts />
       </QueryClientProvider>
     </>
   );
