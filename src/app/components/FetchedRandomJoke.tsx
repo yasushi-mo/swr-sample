@@ -1,4 +1,4 @@
-import { RandomJoke } from "../types";
+import { RandomJoke } from "../auto-revalidation/types";
 
 type Props = {
   heading: string;

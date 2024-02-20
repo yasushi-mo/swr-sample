@@ -2,7 +2,7 @@
 
 import { useRandomJoke } from "@/app/auto-revalidation/api";
 import { ROUTES_AUTO_REVALIDATION } from "../page";
-import { FetchedRandomJoke } from "../components/FetchedRandomJoke";
+import { FetchedRandomJoke } from "../../components/FetchedRandomJoke";
 
 export default function RevalidateOnInterval() {
   const heading = ROUTES_AUTO_REVALIDATION[3].label;

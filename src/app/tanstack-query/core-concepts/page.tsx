@@ -1,7 +1,7 @@
 "use client";
 
 import { RANDOM_JOKE_API_ENDPOINT, fetcher } from "@/app/api";
-import { FetchedRandomJoke } from "@/app/auto-revalidation/components/FetchedRandomJoke";
+import { FetchedRandomJoke } from "@/app/components/FetchedRandomJoke";
 import { useQuery } from "@tanstack/react-query";
 import { ROUTE_TAN_STACK_QUERY } from "../page";
 
