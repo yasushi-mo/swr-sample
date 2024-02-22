@@ -12,8 +12,6 @@ export default function CoreConcepts() {
     queryFn: () => fetcher(RANDOM_JOKE_API_ENDPOINT),
   });
 
-  if (isPending) return "Processing...";
-
   if (error) return `An error has occurred: ${error.message}`;
 
   return (
