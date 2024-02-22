@@ -7,7 +7,7 @@ type Props = {
   randomJoke: RandomJoke | undefined;
 };
 
-export function FetchedRandomJoke({
+export function RandomJokeContainer({
   heading,
   description,
   isValidating,

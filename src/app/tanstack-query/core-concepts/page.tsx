@@ -1,7 +1,7 @@
 "use client";
 
 import { RANDOM_JOKE_API_ENDPOINT, fetcher } from "@/app/api";
-import { FetchedRandomJoke } from "@/app/components/FetchedRandomJoke";
+import { RandomJokeContainer } from "@/app/components/RandomJokeContainer";
 import { useQuery } from "@tanstack/react-query";
 import { ROUTE_TAN_STACK_QUERY } from "../page";
 
@@ -17,7 +17,7 @@ export default function CoreConcepts() {
   if (error) return `An error has occurred: ${error.message}`;
 
   return (
-    <FetchedRandomJoke
+    <RandomJokeContainer
       heading={heading}
       description=""
       isValidating={isPending}

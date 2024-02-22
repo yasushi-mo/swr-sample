@@ -2,7 +2,7 @@
 
 import { useRandomJoke } from "@/app/auto-revalidation/api";
 import { ROUTES_AUTO_REVALIDATION } from "../page";
-import { FetchedRandomJoke } from "../../components/FetchedRandomJoke";
+import { RandomJokeContainer } from "../../components/RandomJokeContainer";
 
 export default function DisableRevalidateIfStale() {
   const heading = ROUTES_AUTO_REVALIDATION[1].label;
@@ -11,7 +11,7 @@ export default function DisableRevalidateIfStale() {
   });
 
   return (
-    <FetchedRandomJoke
+    <RandomJokeContainer
       heading={heading}
       description={`The revalidateIfStale controls if SWR should revalidate when it mounts and there is stale data.`}
       isValidating={isValidating}
