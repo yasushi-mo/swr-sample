@@ -1,4 +1,5 @@
 import { RandomJoke } from "../auto-revalidation/types";
+import { FetchedRandomJoke } from "./FetchedRandomJoke";
 
 type Props = {
   heading: string;
@@ -19,15 +20,7 @@ export function RandomJokeContainer({
       <p className={`mb-3 whitespace-pre-wrap`}>{description}</p>
       <hr className={`mb-3`} />
       <p>Fetched Data from Random Joke API</p>
-      {isValidating ? (
-        <p>Validating...</p>
-      ) : (
-        <ul>
-          <li>- Type: {randomJoke?.type}</li>
-          <li>- Setup: {randomJoke?.setup}</li>
-          <li>- Punchline: {randomJoke?.punchline}</li>
-        </ul>
-      )}
+      <FetchedRandomJoke isValidating={isValidating} randomJoke={randomJoke} />
     </div>
   );
 }
