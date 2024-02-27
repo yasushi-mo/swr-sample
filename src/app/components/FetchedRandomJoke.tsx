@@ -2,11 +2,18 @@ import { RandomJoke } from "../api";
 
 type Props = {
   isValidating: boolean;
+  errorMessage?: string;
   randomJoke: RandomJoke | undefined;
 };
 
-export function FetchedRandomJoke({ isValidating, randomJoke }: Props) {
+export function FetchedRandomJoke({
+  isValidating,
+  errorMessage,
+  randomJoke,
+}: Props) {
   if (isValidating) return <p>Validating...</p>;
+
+  if (errorMessage) return <p>Error: {errorMessage}</p>;
 
   return (
     <ul>

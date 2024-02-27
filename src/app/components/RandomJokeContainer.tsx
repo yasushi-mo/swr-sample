@@ -5,6 +5,7 @@ type Props = {
   heading: string;
   description: string;
   isValidating: boolean;
+  errorMessage?: string;
   randomJoke: RandomJoke | undefined;
 };
 
@@ -12,6 +13,7 @@ export function RandomJokeContainer({
   heading,
   description,
   isValidating,
+  errorMessage,
   randomJoke,
 }: Props) {
   return (
@@ -20,7 +22,11 @@ export function RandomJokeContainer({
       <p className={`mb-3 whitespace-pre-wrap`}>{description}</p>
       <hr className={`mb-3`} />
       <p>Fetched Data from Random Joke API</p>
-      <FetchedRandomJoke isValidating={isValidating} randomJoke={randomJoke} />
+      <FetchedRandomJoke
+        isValidating={isValidating}
+        errorMessage={errorMessage}
+        randomJoke={randomJoke}
+      />
     </div>
   );
 }

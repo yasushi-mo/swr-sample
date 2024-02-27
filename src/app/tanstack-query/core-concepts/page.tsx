@@ -12,13 +12,12 @@ export default function CoreConcepts() {
     queryFn: () => fetcher(RANDOM_JOKE_API_ENDPOINT),
   });
 
-  if (error) return `An error has occurred: ${error.message}`;
-
   return (
     <RandomJokeContainer
       heading={heading}
       description=""
       isValidating={isPending}
+      errorMessage={error?.message}
       randomJoke={data}
     />
   );
