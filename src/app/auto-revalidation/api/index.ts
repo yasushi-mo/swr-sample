@@ -1,5 +1,4 @@
 import { RANDOM_JOKE_API_ENDPOINT, RandomJoke, fetcher } from "@/app/api";
-import { type } from "os";
 import useSWR, { SWRConfiguration } from "swr";
 import useSWRImmutable from "swr/immutable";
 
